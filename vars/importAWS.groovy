@@ -1,5 +1,5 @@
 //import com.amazonaws.services.s3.*
   
-def testEcho(){
+def String test(){
   return 'In shared library'
 }
