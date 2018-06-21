@@ -2,7 +2,7 @@
 
 import com.amazonaws.services.s3.*
 
-class Test{
+class Test implements Serializable{
   def String call(message){
     testText = message
     echo message
@@ -14,4 +14,4 @@ class Test{
     echo text
   }
 }
-
+return this
