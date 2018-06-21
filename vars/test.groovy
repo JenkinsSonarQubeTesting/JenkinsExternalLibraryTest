@@ -7,6 +7,8 @@ def String call(message){
   echo message
 }
 def getS3Client(){
+  AmazonS3Client s3 = new AmazonS3Client()
+  s3.setClientOptions()
   return new AmazonS3Client()
 }
 def testJava(){
