@@ -2,7 +2,7 @@
 
 import com.amazonaws.services.s3.*
 
-class Test implements Serializable{
+class Test{
   def String call(message){
     testText = message
     echo message
