@@ -6,7 +6,7 @@ def String call(message){
   testText = message
   echo message
 }
-def AmazonS3Client getS3Client(){
+def getS3Client(){
   return new AmazonS3Client()
 }
 def testEcho(text){
