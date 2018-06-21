@@ -1,17 +1,15 @@
 @Grab(group='com.amazonaws', module='aws-java-sdk-s3', version='1.11.349')
-
 import com.amazonaws.services.s3.*
+import com.testingJavaImports.TestJava
 
-class TestClass implements Serializable{
-  def String call(message){
-    testText = message
-    echo message
-  }
-  def getS3Client(){
-    return new AmazonS3Client()
-  }
-  def testEcho(text){
-    echo text
-  }
+def String call(message){
+  testText = message
+  echo message
 }
-return this
+def getS3Client(){
+  return new AmazonS3Client()
+}
+def testJava(){
+  TestJava jv = new TestJava()
+  echo jv.testMethod()
+}
