@@ -6,7 +6,7 @@ import groovy.grape.Grape
 Grape.grab(group='com.amazonaws', module='aws-java-sdk-s3', version='1.11.349')
 import com.amazonaws.services.s3.*
 
-def String call(message){Grape.grab(group='com.amazonaws', module='aws-java-sdk-s3', version='1.11.349')
+def String call(message){
   testText = message
   echo message
 }
