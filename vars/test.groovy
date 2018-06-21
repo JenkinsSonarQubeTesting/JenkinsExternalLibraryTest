@@ -9,3 +9,6 @@ def String call(message){
 def AmazonS3Client getS3Client(){
   return new AmazonS3Client()
 }
+def testEcho(text){
+  echo text
+}
