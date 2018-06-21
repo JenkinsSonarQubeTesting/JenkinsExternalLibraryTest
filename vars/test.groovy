@@ -7,6 +7,7 @@ Grape.grab(group='com.amazonaws', module='aws-java-sdk-s3', version='1.11.349')
 import com.amazonaws.services.s3.*
 
 def String call(message){
+  AmazonS3Client s3 = new AmazonS3Client()
   testText = message
   echo message
 }
