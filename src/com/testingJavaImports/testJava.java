@@ -1,6 +1,6 @@
 package com.testingJavaImports;
 
-public class TestJava {
+public class testJava {
     public static void main(String[] args) {
 
     }

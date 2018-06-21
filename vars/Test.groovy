@@ -1,6 +1,6 @@
 @Grab(group='com.amazonaws', module='aws-java-sdk-s3', version='1.11.349')
 import com.amazonaws.services.s3.*
-//import com.testingJavaImports.TestJava
+//import com.testingJavaImports.testJava
 
 def String call(message){
   testText = message
@@ -10,6 +10,6 @@ def getS3Client(){
   return new AmazonS3Client()
 }
 def testJava(){
-  //TestJava jv = new TestJava()
+  //testJava jv = new testJava()
   //echo jv.testMethod()
 }
