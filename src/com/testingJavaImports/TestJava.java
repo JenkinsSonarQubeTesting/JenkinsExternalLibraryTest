@@ -5,6 +5,6 @@ public class TestJava {
 
     }
     public String testMethod(){
-        return "String from inside test java class";
+        return "String from inside Test java class";
     }
 }
