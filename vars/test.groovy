@@ -1,4 +1,4 @@
-import com.testingJavaImports.*;
+import com.testingJavaImports.TestJava;
 
 def String call(message){
   echo message
