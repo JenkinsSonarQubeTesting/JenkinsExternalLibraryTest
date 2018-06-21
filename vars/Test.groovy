@@ -10,6 +10,6 @@ def getS3Client(){
   return new AmazonS3Client()
 }
 def testJava(){
-  TestJava jv = new TestJava()
-  echo jv.testMethod()
+  //TestJava jv = new TestJava()
+  //echo jv.testMethod()
 }
