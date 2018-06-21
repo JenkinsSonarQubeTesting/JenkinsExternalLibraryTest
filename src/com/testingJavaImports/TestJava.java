@@ -1,10 +1,10 @@
 package com.testingJavaImports;
 
-public class testJava {
+public class TestJava {
     public static void main(String[] args) {
 
     }
     public String testMethod(){
-        return "String from inside Test java class";
+        return "String from inside test java class";
     }
 }
