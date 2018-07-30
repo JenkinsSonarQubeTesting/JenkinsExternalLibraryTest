@@ -5,7 +5,7 @@ def call(body){
     body.delegate = config
     body()
 
-    List<String> files = config.fileNames.getValues()
+    List<String> files = config.fileNames.getValues().toString()
     echo files.toString()
     echo files.getClass().toString()
     def pattern = ~"(.*)test(.*)"
