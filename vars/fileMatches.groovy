@@ -7,7 +7,7 @@ def call(body){
 
     List<String> files = config.fileNames.getValues()
     echo files.toString()
-    echo files.getClass()
+    echo files.getClass().toString()
     def pattern = ~"(.*)test(.*)"
 
     List<String> nonMatches = files.findAll{ !pattern.matcher(it).find() }
