@@ -7,7 +7,7 @@ def call(body){
 
     List<String> files = config.fileNames.getStrings()
     echo 'Files:'
-    files.each{echo it}
+    files.each{echo it.toString()}
     def pattern = ~"Jenkins(.*)"
 
     List<String> nonMatches = files.findAll{ !pattern.matcher(it).find() }
