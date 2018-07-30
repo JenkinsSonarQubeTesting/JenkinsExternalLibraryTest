@@ -15,7 +15,7 @@ def call(body){
     }
     else{
       echo "${nonMatches.size()} file(s) don't match pattern:\n"
-      nonMatches.each{echo it}
+      nonMatches.each{echo it.toString()}
       return false
     }
   }catch(Exception e){
