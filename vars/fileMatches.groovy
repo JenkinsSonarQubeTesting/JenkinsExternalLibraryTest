@@ -5,7 +5,7 @@ def call(body){
     body.delegate = config
     body()
 
-    List<String> files = config.fileNames.getStrings()
+    List<String> files = config.fileNames.getValues()
     echo files.toString()
     def pattern = ~"Jenkins(.*)"
 
