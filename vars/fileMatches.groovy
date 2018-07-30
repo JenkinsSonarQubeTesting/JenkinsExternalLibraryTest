@@ -6,6 +6,7 @@ def call(body){
     body()
 
     List<String> files = config.fileNames.getStrings()
+    echo 'Files:'
     files.each{echo it}
     def pattern = ~"Jenkins(.*)"
 
