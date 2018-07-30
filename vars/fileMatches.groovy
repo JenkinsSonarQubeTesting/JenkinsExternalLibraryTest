@@ -5,12 +5,12 @@ def call(body){
     body.delegate = config
     body()
 
-    List<String> files = config.fileNames.getValues().toString()
+    List<String> files = config.fileNames.getValues()
     echo files.toString()
     echo files.getClass().toString()
     def pattern = ~"(.*)test(.*)"
 
-    List<String> nonMatches = files.findAll{ !pattern.matcher(it).find() }
+    List<String> nonMatches = files.flatten().findAll{ !pattern.matcher(it).find() }
     if(nonMatches.isEmpty()){
       return true 
     }
