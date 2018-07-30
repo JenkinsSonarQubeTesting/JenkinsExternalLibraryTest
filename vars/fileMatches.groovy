@@ -6,9 +6,7 @@ def call(body){
     body()
 
     List<String> files = config.fileNames.getValues()
-    echo files.toString()
-    echo files.getClass().toString()
-    def pattern = ~"(.*)test(.*)"
+    def pattern = ~"Jenkins(.*)|(.*)test(.*)"
 
     List<String> nonMatches = files.flatten().findAll{ !pattern.matcher(it).find() }
     if(nonMatches.isEmpty()){
